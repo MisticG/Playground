@@ -26,4 +26,16 @@ if (randomValue = Math.random() < 0.1) {
 }
 }
 
+function entirelyRandom() {
+    var red = Math.round(Math.random() * 255);
+    var green = Math.round(Math.random() * 255);
+    var blue = Math.round(Math.random() * 255);
+
+    var rgbValue = "rgb(" + red + "," + green + "," + blue +")";
+    document.body.style.backgroundColor = rgbValue;
+
+    console.log(red, green, blue);
+
+
+}
 
