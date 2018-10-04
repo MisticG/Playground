@@ -35,7 +35,7 @@ function entirelyRandom() {
     document.body.style.backgroundColor = rgbValue;
 
     console.log(red, green, blue);
-
-
 }
+
+setInterval(entirelyRandom, 1000);
 
