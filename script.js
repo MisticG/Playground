@@ -37,5 +37,36 @@ function entirelyRandom() {
     console.log(red, green, blue);
 }
 
-setInterval(entirelyRandom, 1000);
+//setInterval(entirelyRandom, 1000); //
+
+function hexaRandom() {
+    var red = convertToHex(Math.round(Math.random() * 15));
+    var red2 = convertToHex(Math.round(Math.random() * 15));
+    var green = convertToHex(Math.round(Math.random() * 15));
+    var green2 = convertToHex(Math.round(Math.random() * 15));
+    var blue = convertToHex(Math.round(Math.random() * 15));
+    var blue2 = convertToHex(Math.round(Math.random() * 15));
+
+    var hexValue = "#"+red+red2+green+green2+blue+blue2;
+    document.body.style.backgroundColor = hexValue;
+    console.log(hexValue);
+
+} 
+
+function convertToHex(value) {
+    if (value == 10) {
+        return "A";
+    } else if (value == 11) {
+        return "B";
+    } else if (value == 12) {
+        return "C";
+    } else if (value == 13) {
+        return "D";
+    } else if (value == 14) {
+        return "E";
+    } else if (value == 15) {
+        return "F";
+    }
+    return value;
+}
 
