@@ -70,3 +70,5 @@ function convertToHex(value) {
     return value;
 }
 
+myLibrary()
+
